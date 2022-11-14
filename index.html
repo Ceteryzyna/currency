@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator walut</title>
+    <meta property="og:image" content="images/currency.png">
+    <link rel="icon" href="images/tablet.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/currency.js"></script>
+</head>
+
+<body class="container">
+    <form class="js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator walutowy</legend>
+            <label>
+                <span class="form__labelText">Waluta: EUR</span>
+                <input type="number" min="1" step="0.01" required class="form__text form__input js-amount"
+                    placeholder="wpisz kwotę">
+            </label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Po jakim kursie</legend> <label>
+                <p>Aktualny kurs waluty na dzien 20.10.2022 r.:</p>
+                <input class="form__text form__input js-rate" value="EUR = 4,28 PLN" readonly>
+            </label>
+            <p>
+                <button class="form__button">policz</button>
+            </p>
+        </fieldset>
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Wartość</legend>
+            <div>
+                <p>Wartość =
+                    <strong class="js-value">EUR/</strong>PLN
+                </p>
+                <p>
+                    <button type="reset" class="form__button js-reset">wyzeruj</button>
+                </p>
+            </div>
+        </fieldset>
+    </form>
+    <h2> testowy paragrapf</h2>
+    <p>Lorem ipsum dolor sit amet, sectetur elit. Impedit obcaecati sit quasi debitis inventore fuga id fugit soluta rem molestiae  doloremque quidem aliquid, quas eum. Nulla dolor nisi voluptate.</p>
+</body>
+<foot class="foot">Prawa do kalkulatora zastrzeżone by Ceteryzyna.</foot>
+
+</html>
